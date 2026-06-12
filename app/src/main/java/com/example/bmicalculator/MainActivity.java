@@ -6,6 +6,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,20 +61,20 @@ public class MainActivity extends AppCompatActivity {
                             String.format("%.2f", bmi));
 
             if(bmi < 18.5) {
-                txtCategory.setText(
-                        "Underweight");
+                txtCategory.setText("Underweight");
+                txtCategory.setTextColor(ContextCompat.getColor(this, R.color.status_underweight));
             }
             else if(bmi < 25) {
-                txtCategory.setText(
-                        "Normal Weight");
+                txtCategory.setText("Normal Weight");
+                txtCategory.setTextColor(ContextCompat.getColor(this, R.color.status_normal));
             }
             else if(bmi < 30) {
-                txtCategory.setText(
-                        "Overweight");
+                txtCategory.setText("Overweight");
+                txtCategory.setTextColor(ContextCompat.getColor(this, R.color.status_overweight));
             }
             else {
-                txtCategory.setText(
-                        "Obese");
+                txtCategory.setText("Obese");
+                txtCategory.setTextColor(ContextCompat.getColor(this, R.color.status_overweight));
             }
 
         });
