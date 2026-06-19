@@ -8,4 +8,15 @@
     <string name="category">Category</string>
     <string name="health_tips">Health Tips</string>
     <string name="bmi_summary">Body Mass Index (BMI) is a measure of body fat based on height and weight.</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+    <string name="already_have_account">Already have an account? Login</string>
 </resources>
